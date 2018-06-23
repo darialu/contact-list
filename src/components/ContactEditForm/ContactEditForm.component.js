@@ -6,6 +6,7 @@ import { Form, Text } from 'react-form';
 class ContactEditForm extends Component {
 
   onSubmit = values => {
+    console.info(values);
     this.props.onEditSubmit(values.name, values.phone, this.props.id);
   }
 
